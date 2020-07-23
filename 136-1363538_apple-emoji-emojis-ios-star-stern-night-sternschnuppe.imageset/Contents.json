@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "136-1363538_apple-emoji-emojis-ios-star-stern-night-sternschnuppe.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
