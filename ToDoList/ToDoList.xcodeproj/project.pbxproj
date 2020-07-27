@@ -15,6 +15,8 @@
 		8DE919E124CF42ED007C15D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE919DF24CF42ED007C15D6 /* LaunchScreen.storyboard */; };
 		8DE919E924CF465F007C15D6 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE919E824CF465F007C15D6 /* ToDoTableViewController.swift */; };
 		8DE919EB24CF4712007C15D6 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE919EA24CF4712007C15D6 /* ToDo.swift */; };
+		8DE919ED24CF5569007C15D6 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE919EC24CF5569007C15D6 /* AddToDoViewController.swift */; };
+		8DE919EF24CF67ED007C15D6 /* CompletedToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE919EE24CF67ED007C15D6 /* CompletedToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8DE919E224CF42ED007C15D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DE919E824CF465F007C15D6 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		8DE919EA24CF4712007C15D6 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		8DE919EC24CF5569007C15D6 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		8DE919EE24CF67ED007C15D6 /* CompletedToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			children = (
 				8DE919E824CF465F007C15D6 /* ToDoTableViewController.swift */,
 				8DE919EA24CF4712007C15D6 /* ToDo.swift */,
+				8DE919EC24CF5569007C15D6 /* AddToDoViewController.swift */,
+				8DE919EE24CF67ED007C15D6 /* CompletedToDoViewController.swift */,
 				8DE919D024CF42E6007C15D6 /* ToDoList */,
 				8DE919CF24CF42E6007C15D6 /* Products */,
 			);
@@ -147,7 +153,9 @@
 				8DE919D224CF42E6007C15D6 /* AppDelegate.swift in Sources */,
 				8DE919EB24CF4712007C15D6 /* ToDo.swift in Sources */,
 				8DE919E924CF465F007C15D6 /* ToDoTableViewController.swift in Sources */,
+				8DE919EF24CF67ED007C15D6 /* CompletedToDoViewController.swift in Sources */,
 				8DE919D424CF42E6007C15D6 /* SceneDelegate.swift in Sources */,
+				8DE919ED24CF5569007C15D6 /* AddToDoViewController.swift in Sources */,
 				8DE919DC24CF42E6007C15D6 /* ToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

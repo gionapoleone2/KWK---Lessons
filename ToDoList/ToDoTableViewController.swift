@@ -14,11 +14,11 @@ class ToDoTableViewController: UITableViewController {
 
     func createToDo() -> [ToDoClass]{
         let swiftToDo = ToDoClass()
-        swiftToDo.description = "Learn Swift"
+        swiftToDo.description = "Find a medical internship"
         swiftToDo.important = true
         
         let dogToDo = ToDoClass()
-        dogToDo.description = "Walk the Dog"
+        dogToDo.description = "Build a Resume"
         //important is set to false as default
         
         return [swiftToDo, dogToDo]
@@ -34,7 +34,7 @@ class ToDoTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return listOfToDo.count
     }
     
 
@@ -48,7 +48,7 @@ class ToDoTableViewController: UITableViewController {
         cell.textLabel?.text = eachToDo.description
         
         if eachToDo.important{
-            cell.textLabel?.text = "!" + eachToDo.description
+            cell.textLabel?.text = "⚕️" + eachToDo.description
         }
         
         else {
@@ -61,11 +61,17 @@ class ToDoTableViewController: UITableViewController {
     }
     
 
-   
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //this gives us a single ToDo
+        let eachToDo = listOfToDo[indexPath.row]
+        performSegue(withIdentifier: "moveToCompletedToDoVC", sender: eachToDo)
 
-    /*
+    }
+
+    
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    /* override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -73,15 +79,26 @@ class ToDoTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
+ */
    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+   // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        if let nextAddToDoVC = segue.destination as? AddToDoViewController{
+            
+            nextAddToDoVC.previousToDoTVC = self
+       //  Get the new view controller using segue.destination.
+      //   Pass the selected object to the new view controller.
     }
 
-
- }*/
+        if let nextCompletedToDoVC = segue.destination as? CompletedToDoViewController {
+            if let chosenToDo = sender as? ToDoClass {
+                nextCompletedToDoVC.selectedToDo = chosenToDo
+                nextCompletedToDoVC.previousToDoTVC = self
+            }
+        }
+ }
 }
