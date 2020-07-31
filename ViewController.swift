@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  MiniProject2
+//  FinalProject
 //
-//  Created by Giovanna Napoleone on 7/23/20.
-//  Copyright © 2020 Giovanna Napoleone. All rights reserved.
+//  Created by gwc on 7/28/20.
+//  Copyright © 2020 gwc. All rights reserved.
 //
 
 import UIKit

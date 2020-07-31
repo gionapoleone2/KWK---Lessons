@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "muscle-tissue-png-smooth-muscle-cells-skeletal-muscle-cells-and-cardiac-muscle-cells-smooth-muscle-cells-do-not-have-striations-while-skeletal-muscle-cells-do-1125.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
